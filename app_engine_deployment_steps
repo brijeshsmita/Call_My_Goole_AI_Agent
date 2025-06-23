@@ -1,0 +1,54 @@
+You can use **Google App Engine**, which is a fully managed serverless platform and works well with Vertex AI.
+
+---
+
+### 🚀 Deploying to Google App Engine (Standard Environment)
+
+#### ✅ Step 1: Create `app.yaml`
+This file tells App Engine how to run your app.
+
+```yaml
+runtime: python310
+entrypoint: python main.py
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: auto
+```
+
+#### ✅ Step 2: Create `requirements.txt`
+Include all your dependencies:
+
+```
+flask
+google-cloud-aiplatform
+```
+
+#### ✅ Step 3: Initialize Google Cloud Project
+If you haven’t already:
+
+```bash
+gcloud init
+gcloud auth application-default login
+gcloud config set project YOUR_PROJECT_ID
+```
+
+#### ✅ Step 4: Deploy
+From your project directory (where `main.py`, `app.yaml`, and `requirements.txt` are located):
+
+```bash
+gcloud app deploy
+```
+
+Then open your app:
+
+```bash
+gcloud app browse
+```
+
+---
+
+Would you like me to generate the `app.yaml` and `requirements.txt` files for you now?

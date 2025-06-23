@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hacker2025-team-112-dev",
+  "private_key_id": "fdd1a9021e546d96acd05e717cdb35f5b4a26ca2",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCr2oHoTCpoAHZ5\nMyMxbjrTEEFz7MWXMUc82ATs6sfKbWpN3dpICZqCuNDaGT5dhuYMMEELmtIQ9WMx\nxAlbgGWDaSe3C2Q0HyjIQ436n5+ztk0PKfHEx0ewBDkTGYj3Jvvn/8aE4e5jWMLd\nQsp7spV8afsb6Pa6xxDJ2q6H+QvcfaPKwUwZ1m2hXOFUtCzVip3IdDh3a6xhGoFd\nPeG0RMg5gaAUZx7K4yA+f7lZ1FvSSnLE6hAHaRrBlWgq6ECPKy5fdZD7PYDOnbux\ndTywUbyQjeGCXxaQhNfqxYwmkGWeqC76yxJxhvwgKDkyrhspNT0LPR05M79wzQJw\n4Q2ao9/hAgMBAAECggEAEMJX4zFeUf3Nj/Hqj4eqPpVkv1Xf9RJ4ry3P2SeSQU2c\notMCVlPIGNHGMvwS5r22PIpjetVn1qs04mW1ledLvwjSYdmUtY0zsHKqFhQFV9oX\njLrbRC888KTmHf83qgadZVlpC4zERIr47JP2uXZyeTYVUiT3aW1AArdhSDWuMEZ6\nzgmFLjHi7PrfvO27xzu7+DrmDHdIdNlxPJdq7EQs3QUyP/N9ZLW394Fnz6s2VfLA\nogUJX1AnMm6zU3qEbD2h/UzZD++Q1UzeBraqKFT+l5k6eCt+vyk+XVi3kEWWawhp\n+eRTMIr81KZw3Xi6bmbSLLRqaNuSIEPPEliBQwWwswKBgQDUa8/NA+64unHL0gof\nAT4uyzfgDZBTc7nX6RkFLPIDLTJEPNW25R8SsT06sXcx1FM1QLjF4MnZeRcgwUTk\nl4KrIgjP3bYVGRHyPbH8DeFWENfZ5xpgXVp0vwUjE4s0BEWoc28tbsdcBR7Gl2Rj\nJXTLsNQyYlzD3KQORIGyUIgk5wKBgQDPHB48c6AHkXERICZB1fJvPotiICsj/t2j\nPLHSdDnzRU5oGYk/WoQNBahejpuA01LKQn69qbjWKk1oZ4PJSbj+LBuARJB9ObGZ\ncVTrLvJo1p/2lJZXTy9ENF3svj5wQhAhpNj9mnGz8o6M//aTGTfKh07lmCkkuNwi\nYl7g2Jfz9wKBgQDO7V92ldgdN/LW3HtjjLBooSqDJnNr+BYYEEiBVDFFiuemtaRz\nEGvep62/2VUFw5JzE+NrT/kR0vYGwH8+N6Hg17zB0Xcowk1LL3KM2XCjiLDc4lY9\nfXM6u0Jj0wwN1gONfzXUik/Ggm5iguQV+Uz3iACOPGelnPBrvayiafTWDQKBgQCB\n6zqQY1vUw4iw3IEDNYmB/TMEV/eX+e3g01cdFKmxkB1SMgqlgktpu83VmxGzK104\n4aONqGT5e8nZH25NG4D/eH275cbZtxJQlgZWDbokx9XKoYT5ugOFfnAY7XJPizGB\nWV6BH5wJ7LM9geeUePJFisGURvIwRgJZU2n/E/+mGwKBgBgNBWr70J4v3HeJDML+\nF298YsMzG2P/v9JAKE0SuozUu4na+F3CHErupG/RI8IpmkULoT6bRFhEfCPdZlnA\nBJH8YdyZHAme5t9hWDE64oKkyZbU8c2GTZoJ79o1ILV2HinvfEuglYwRstR+yq1y\ng7ESnIH3d/QtAanI4a2sE1Wh\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-access@hacker2025-team-112-dev.iam.gserviceaccount.com",
+  "client_id": "106918439731931605626",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-access%40hacker2025-team-112-dev.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
