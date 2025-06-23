@@ -1,0 +1,109 @@
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #00008B;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Card Layout for Buttons */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Button Styling */
+.card-button {
+    background-color: #00008B;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-button:hover {
+    background-color: #000070;
+    transform: scale(1.05);
+}
+
+.card-button:active {
+    transform: scale(0.95);
+    background-color: #000060;
+}
+
+/* Tooltip Styling */
+.card-button .tooltip-text {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.8rem;
+}
+
+.card-button:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Modal Styling */
+.modal-header {
+    background-color: #00008B;
+    color: white;
+}
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Responsive Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00008B;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Animation for Modal Appearance */
+.modal.fade .modal-dialog {
+    transform: translateY(-50px);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}

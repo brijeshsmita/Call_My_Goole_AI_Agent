@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Executive Coaching System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+     <link href="{{ url_for('static', filename='css/sales.css') }}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libsin.css">
+</head>
+<body>
+  <div class="center">
+    <header style="color:white; background-color:darkblue; padding: 10px;">
+      <h1>Good Morning Rachel!</h1>
+    </header>
+
+    <section class="avatar" style="text-align:center;">
+      <img src="{{ url_for('static', filename='images/Polaris.png') }}" width="190" height="190" alt="User Avatar">
+    </section>
+
+    <main>
+      <section align="center">
+        <h2>Ask Your Sales Executive</h2> 
+        <div class="chat-container">
+          <div class="chat-box">
+            {% for entry in chat_history %}
+              <div class="chat-message user">
+                <div class="bubble">{{ entry.user }}</div>
+                <div class="icon"><i class="fas fa-user"></i></div>
+              </div>
+              <div class="chat-message agent">
+                <div class="icon"><i class="fas fa-robot"></i></div>
+                <div class="bubble">{{ entry.agent }}</div>
+              </div>
+            {% endfor %}
+          </div>
+
+          <!-- Form to send user input to Vertex AI Agent -->
+          <form method="POST" action="/ask_coach">
+            <input type="text" name="coach_input" placeholder="Type your question here..." required>
+            <button type="submit">Ask</button>
+          </form>
+
+          <!-- Button to start a new chat -->
+          <form method="POST" action="/new_chat" style="margin-top: 15px;">
+            <button type="submit" class="btn btn-danger">
+              <i class="fas fa-comments" style="margin-right: 8px;"></i> Start New Chat
+            </button>
+          </form>
+        </div> 
+      </section>
+    </main>
+  </div> 
+</body>
+</html>
